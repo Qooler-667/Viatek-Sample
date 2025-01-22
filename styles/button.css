@@ -1,0 +1,138 @@
+.navbar__burger {
+    padding: 20px 30px;
+}
+
+.navbar__burger_button {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.navbar__burger_button>span,
+.navbar__burger_button>span::after,
+.navbar__burger_button>span::before {
+    width: 20px;
+    height: 3px;
+    content: '';
+}
+
+.navbar__burger_button>span::after {
+    position: absolute;
+    top: 4px;
+}
+
+.navbar__burger_button>span::before {
+    position: absolute;
+    bottom: 3px;
+}
+
+.navbar__phone_button,
+.navbar__phone_pop-up,
+.header__phone_button,
+.header__phone_pop-up {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2px;
+}
+
+/* EXIT - BUTTON */
+.exit-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exit-button__span {
+    width: 18px;
+    height: 3px;
+    transform: rotate(45deg);
+}
+
+.exit-button__span::after {
+    content: '';
+    display: flex;
+    width: 18px;
+    height: 3px;
+    transform: rotate(-90deg);
+}
+
+/* HEADER SEARCH - BUTTON */
+.header__search-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 9px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+}
+
+/* SECTION - BUTTONS */
+.long-green-btn,
+.clear-small-btn,
+.clear-big-btn,
+.call-btn-dark,
+.call-btn-light {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: var(--border10);
+}
+
+/* call - button */
+.call-btn-dark,
+.call-btn-light {
+    padding: 20px;
+    width: 254px;
+    height: 67px;
+    margin-left: 50px;
+}
+
+/* clear - button */
+.clear-big-btn {
+    width: 151px;
+    height: 64px;
+    padding: 20px;
+    border: 1px solid var(--base-white);
+}
+
+.clear-average-btn,
+.clear-average-btn>span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 171px;
+    height: 57px;
+    border-radius: var(--border10);
+}
+
+.clear-average-btn>span {
+    width: 169px;
+    height: 55px;
+}
+
+.clear-small-btn {
+    width: 104px;
+    height: 36px;
+    padding: 10px 15px;
+}
+
+/* ДЛИННАЯ КНОПКА */
+.long-green-btn {
+    width: 100%;
+    max-width: 1520px;
+    height: 67px;
+    padding: 20px;
+}

@@ -1,0 +1,133 @@
+body {
+    color: var(--base-black);
+}
+
+header {
+    background-color: #fafafa;
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.62);
+    background: linear-gradient(90deg, #006943 30%, #26b447 100%);
+}
+
+.footer__phone>span,
+.footer__adress>span,
+.footer__email>span {
+    color: var(--base-white);
+}
+
+.footer__social-wrapper {
+    background-color: #cdcdcd;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #3adc49 0%, #006943 100%);
+}
+
+.navbar__loc>a,
+.navbar__menu_list>li>a {
+    color: var(--base-white);
+}
+
+.navbar__menu_list>li>a:hover {
+    background-color: rgb(1, 179, 24);
+}
+
+.navbar__burger_button>span,
+.navbar__burger_button>span::after,
+.navbar__burger_button>span::before {
+    background: var(--base-white);
+}
+
+.header__logo>span {
+    background: #305A4B;
+}
+
+.header__logo>span:nth-child(2) {
+    background: #59955c;
+}
+
+.header__logo>span:nth-child(3),
+.header__logo>span:nth-child(4),
+.header__logo>span:nth-child(5) {
+    background: #8dcd91;
+    border: .1px solid rgba(90, 90, 90, 0.062);
+}
+
+.header__logo_name {
+    color: #59955c;
+}
+
+.header__logo_name>span {
+    color: #2e3441;
+}
+
+.header__timing_txt {
+    color: #a9aeb9;
+}
+
+.header__timing {
+    background-color: #ffffff;
+}
+
+.header__social_watcap,
+.header__social_telegram {
+    background-color: #cdcdcd;
+}
+
+.navbar__phone_form ::placeholder {
+    color: var(--base-white);
+}
+
+/* POP-UP HEADER - NAV */
+.navbar__pop-up,
+.loc__pop-up-wrapper,
+.phone__list-wrapper {
+    background-color: var(--base-black);
+}
+
+.navbar__pop-up_item>a,
+.loc__pop-up_item>a,
+.header__phone_item>a {
+    color: var(--p-up-menu-txt);
+}
+
+.exit-button__span,
+.exit-button__span::after {
+    background-color: #F79418;
+}
+
+/* SECTION - BUTTONS */
+/* call-button */
+.call-btn-light,
+.call-btn-dark {
+    color: var(--base-white);
+}
+
+.call-btn-dark {
+    background: linear-gradient(90deg, #26b447 0%, #006943 100%);
+}
+
+.call-btn-light {
+    background: linear-gradient(90deg, #3adc49 0%, #26b447 45.82%, #006943 100%);
+}
+
+/* clear - button */
+.clear-average-btn {
+    background: linear-gradient(90deg, #26b447 0%, #006943 100%);
+}
+
+.clear-average-btn>span {
+    background: var(--base-white);
+}
+
+.clear-small-btn {
+    color: #26b447;
+}
+
+/* ДЛИННАЯ КНОПКА */
+.long-green-btn {
+    color: var(--base-white);
+    background: linear-gradient(90deg, #26b447 0%, #006943 100%);
+}

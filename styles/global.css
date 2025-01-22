@@ -1,0 +1,24 @@
+ :root {
+     /* fonts */
+     --font-family: "noto-sans";
+     --second-family: "myriad-pro";
+     --third-family: "futuris";
+     /* colors */
+     --base-black: #262d2a;
+     --base-white: #ffffff;
+     --p-up-menu-txt: #a9aeb9;
+     ;
+     /* BORDERS */
+     --border10: 10px;
+ }
+
+ .container {
+     max-width: 1560px;
+     height: auto;
+     margin: 0 auto;
+     padding: 0 20px;
+ }
+
+ button {
+     cursor: pointer;
+ }

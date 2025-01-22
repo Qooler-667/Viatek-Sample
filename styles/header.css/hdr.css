@@ -1,0 +1,272 @@
+.navbar {
+    width: 100%;
+}
+
+.navbar>.container,
+.navbar__loc,
+.navbar__menu,
+.navbar__menu_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__loc {
+    width: 24px;
+    height: 24px;
+    gap: 10px;
+    position: relative;
+}
+
+.navbar__menu_list>li>a {
+    padding: 20px 30px;
+}
+
+.navbar__pop-up,
+.navbar__burger-wrapper {
+    position: relative;
+}
+
+.navbar__pop-up_item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* HEADER - НИЗ */
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.header__logo-wrapp {
+    width: 131px;
+    height: 71px;
+    display: flex;
+}
+
+.header__logo {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-slogan {
+    display: flex;
+    align-items: center;
+}
+
+.header__hr {
+    width: 71px;
+    height: 0;
+    transform: rotate(-90deg);
+    border: 1px solid #d9e7da;
+}
+
+.header__search {
+    position: relative;
+    border: 1px solid #cdcdcd;
+    border-radius: var(--border10);
+    width: 321px;
+    height: 44px;
+}
+
+.header__input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: var(--border10);
+    padding: 10px 40px 10px 20px;
+}
+
+.header__timing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 136px;
+    height: 52px;
+    padding: 10px 15px;
+    border-radius: var(--border10);
+}
+
+.header__social {
+    display: flex;
+    gap: 50px;
+}
+
+.header__social_watcap,
+.header__social_telegram {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.navbar__phone-mob {
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+
+.navbar__phone_form,
+.header__phone_form {
+    display: flex;
+    align-items: center;
+    width: 227px;
+    height: 27px;
+}
+
+.navbar__phone_form {
+    width: 175px;
+}
+
+.navbar__phone_form>input,
+.header__phone_form>input {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+}
+
+/* POP - UP */
+.loc__pop-up-wrapper,
+.navbar__pop-up,
+.phone__list-wrapper {
+    position: absolute;
+    width: 320px;
+    height: fit-content;
+    z-index: 9999;
+    padding: 50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s, visibility 1s;
+}
+
+.loc__pop-up-wrapper {
+    top: 35px;
+    left: 0;
+}
+
+.navbar__pop-up {
+    top: 35px;
+    right: 0;
+}
+
+.navbar__pop-up_list,
+.loc__pop-up_list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.navbar__burger-wrapper:hover .navbar__pop-up,
+.navbar__loc:hover .loc__pop-up-wrapper,
+.header__pop-up-wrapper:hover .phone__list-wrapper {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* PHONE - POP-UP */
+.header__pop-up-wrapper {
+    position: relative;
+}
+
+.phone__list-wrapper {
+    top: 30px;
+    right: 0;
+    width: 300px;
+    padding: 50px;
+}
+
+.header__phone_list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* MEDIA BREAK POINT */
+@media (max-width:1440px) {
+    .header__social {
+        display: none;
+    }
+}
+
+@media (max-width:1280px) {
+    .navbar__loc {
+        display: none;
+    }
+
+    .navbar__phone-mob {
+        display: block;
+    }
+
+    .header__container {
+        justify-content: space-around;
+        padding: 30px 20px;
+    }
+
+    .header__timing {
+        display: none;
+    }
+
+    .header__phone {
+        display: none;
+    }
+}
+
+@media (max-width:1024px) {
+    .navbar__menu_list {
+        display: none;
+    }
+
+    .header__container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .header__search {
+        margin-bottom: 20px;
+    }
+
+    .logo-slogan {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width:768px) {
+    .logo-slogan {
+        display: flex;
+    }
+
+    .header__logo-wrapp {
+        min-width: 90px;
+    }
+
+    .header__hr {
+        margin: -5px;
+    }
+}
+
+@media (max-width:375px) {
+    .navbar__burger {
+        padding: 15px 10px;
+    }
+
+    .header__search {
+        width: 100%;
+    }
+
+    .logo-slogan {
+        padding: 20px 0;
+    }
+
+    .header__slogan_txt {
+        line-height: 130%;
+        letter-spacing: .5px;
+    }
+}
