@@ -26,7 +26,8 @@ footer {
 }
 
 .navbar__loc>a,
-.navbar__menu_list>li>a {
+.navbar__menu_list>li>a,
+.navbar__phone-mob>a {
     color: var(--base-white);
 }
 
