@@ -17,25 +17,6 @@ body {
     font-family: "noto-sans";
 }
 
-/* FOOTER */
-footer {
-    font-family: "myriad-pro";
-    font-weight: 400;
-    font-size: 12px;
-}
-
-.footer__phone>span {
-    font-size: 25px;
-}
-
-.footer__adress>span,
-.footer__email>span {
-    font-size: 1.25em;
-    font-weight: 600;
-    letter-spacing: .1em;
-}
-
-
 h1 {
     font-family: var(--font-family);
     font-style: normal;
@@ -48,10 +29,11 @@ a {
 }
 
 /* ПО КЛАССАМ */
+
+/* HEADER */
 .navbar__loc>a {
     font-size: 15px;
     font-weight: 400;
-
 }
 
 .navbar__menu_list>li>a {
@@ -73,14 +55,35 @@ a {
     font-weight: 400;
 }
 
-.navbar__phone_form>input {
-    font-weight: 400;
-    font-size: 16px;
-}
-
 .header__phone_form>input {
     font-weight: 400;
     font-size: 20px;
+}
+
+
+/* FOOTER */
+footer {
+    font-family: "myriad-pro";
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.footer__phone>span {
+    font-size: 25px;
+}
+
+.footer__adress>span,
+.footer__email>span {
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+
+/* SECTIONS */
+/* preview - section */
+.preview__txt {
+    font-size: 20px;
+    font-weight: 300;
 }
 
 /* SECTION - BUTTONS */

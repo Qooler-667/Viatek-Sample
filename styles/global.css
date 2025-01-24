@@ -7,9 +7,11 @@
      --base-black: #262d2a;
      --base-white: #ffffff;
      --p-up-menu-txt: #a9aeb9;
+     --cd-color: #cdcdcd;
      ;
      /* BORDERS */
      --border10: 10px;
+     --border20: 20px;
  }
 
  .container {

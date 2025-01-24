@@ -24,3 +24,9 @@ input[type="number"]:focus {
     outline: none;
     -moz-appearance: textfield;
 }
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

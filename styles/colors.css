@@ -18,7 +18,7 @@ footer {
 }
 
 .footer__social-wrapper {
-    background-color: #cdcdcd;
+    background-color: var(--cd-color);
 }
 
 .navbar {
@@ -74,7 +74,7 @@ footer {
 
 .header__social_watcap,
 .header__social_telegram {
-    background-color: #cdcdcd;
+    background-color: var(--cd-color);
 }
 
 .navbar__phone_form ::placeholder {
@@ -127,8 +127,16 @@ footer {
     color: #26b447;
 }
 
-/* ДЛИННАЯ КНОПКА */
-.long-green-btn {
-    color: var(--base-white);
-    background: linear-gradient(90deg, #26b447 0%, #006943 100%);
+.preview__dots>span {
+    background: var(--cd-color);
 }
+
+.preview__dots>span:first-child {
+    background: #1FA547;
+}
+
+.preview__slider_buttons>a {
+    background: #fafafa;
+}
+
+/* SECTIONS */
