@@ -158,28 +158,53 @@
                     среду в гармонии с<br>
                     природой!
                 </h1>
-                <div>
-                    <p class="preview__txt">Мы любим то, что делаем. В приоритете<br class="preview__txt_br1">
-                        комплексный уход за садом и любой озелененной<br class="preview__txt_br2">
-                        территорией.
-                    </p>
-                </div>
+
+                <p class="preview__txt">Мы любим то, что делаем. В приоритете<br class="preview__txt_br1">
+                    комплексный уход за садом и любой озелененной<br class="preview__txt_br2">
+                    территорией.
+                </p>
+
                 <a href="#" class="preview__content_btn call-btn-dark">Вызвать дизайнера</a>
+
                 <div class="preview__dots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <label for="switch1"></label>
+                    <label for="switch2"></label>
+                    <label for="switch3"></label>
+                    <label for="switch4"></label>
                 </div>
             </div>
             <!-- right - block -->
-            <div class="preview__slider">
-                <div class="preview__img-wrapper">
-                    <img src="./images/preview-slider-img1.png" alt="">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <input checked type="radio" name="slider" id="switch1">
+                    <input type="radio" name="slider" id="switch2">
+                    <input type="radio" name="slider" id="switch3">
+                    <input type="radio" name="slider" id="switch4">
+                    <div class="slides">
+                        <div class="overflow">
+                            <div class="slider-inner">
+                                <div class="slide"><img alt="" src="./images/preview-slider-img1.png">
+                                </div>
+                                <div class="slide">
+                                    <img alt="" src="./images/preview-slider-img1.png">
+                                </div>
+                                <div class="slide">
+                                    <img alt="" src="./images/preview-slider-img1.png">
+                                </div>
+                                <div class="slide">
+                                    <img alt="" src="./images/preview-slider-img1.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="preview__slider_buttons">
-                    <a href="#"><img src="./icons/chevron-left-green.svg" alt=""></a>
-                    <a href="#"><img src="./icons/chevron-right-green.svg" alt=""></a>
+                <div class="arrows">
+                    <div class="arrow-left arrow">
+                        <label for="switch1"><span></span></label>
+                    </div>
+                    <div class="arrow-right arrow">
+                        <label for="switch4"><span></span></label>
+                    </div>
                 </div>
             </div>
         </section>
