@@ -1,5 +1,5 @@
 .preview {
-    padding: 50px 0;
+    padding: 50px 20px;
     display: flex;
     gap: 30px;
 }
@@ -36,10 +36,9 @@
 .arrows {
     width: 100%;
     max-width: 975px;
-    height: 50px;
-    padding: 5px 50px;
+    height: 44px;
+    padding: 0 50px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin: 0 auto;
     position: absolute;
@@ -73,7 +72,7 @@
     position: absolute;
     content: '';
     display: flex;
-    width: 15.5px;
+    width: 15px;
     height: 4px;
     bottom: -6px;
     left: -5px;
@@ -112,21 +111,6 @@
 }
 
 
-#switch1:checked~.slider-inner {
-    margin-left: 0;
-}
-
-#switch2:checked~.slider-inner {
-    margin-left: -100%;
-}
-
-#switch3:checked~.slider-inner {
-    margin-left: -200%;
-}
-
-#switch4:checked~.slider-inner {
-    margin-left: -300%;
-}
 
 /* SLIDER */
 .slider-wrapper {
@@ -176,27 +160,19 @@ input[type="radio"] {
 }
 
 #switch2:checked~.slides .slider-inner {
-    margin-left: -25%;
-    /* Измените на -25% так как у вас 4 слайда */
+    margin-left: -100%;
+
 }
 
 #switch3:checked~.slides .slider-inner {
-    margin-left: -50%;
-    /* Измените на -50% так как у вас 4 слайда */
+    margin-left: -200%;
+
 }
 
 #switch4:checked~.slides .slider-inner {
-    margin-left: -75%;
-    /* Измените на -75% так как у вас 4 слайда */
+    margin-left: -300%;
+
 }
-
-
-
-
-
-
-
-
 
 /* MEDIA */
 @media (max-width:1440px) {
@@ -226,4 +202,23 @@ input[type="radio"] {
     }
 }
 
-@media (max-width:1024px) {}
+@media (max-width:768px) {
+    .arrows {
+        padding: 10px;
+    }
+
+    .arrow>label {
+        width: 35px;
+        height: 35px;
+    }
+
+    .arrow-left>label>span {
+        top: 12px;
+        left: 8px;
+    }
+
+    .arrow-right>label>span {
+        top: 11px;
+        left: 11px;
+    }
+}

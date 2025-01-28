@@ -14,6 +14,10 @@
      --border20: 20px;
  }
 
+ body::-webkit-scrollbar {
+     display: none;
+ }
+
  .container {
      max-width: 1560px;
      height: auto;
