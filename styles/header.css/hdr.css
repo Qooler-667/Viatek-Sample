@@ -156,8 +156,8 @@
   gap: 50px;
 }
 
-.navbar__burger-wrapper:hover .navbar__pop-up,
 .navbar__loc:hover .loc__pop-up-wrapper,
+.navbar__burger-wrapper:hover .navbar__pop-up,
 .header__pop-up-wrapper:hover .header__phone_list-wrapper {
   visibility: visible;
   opacity: 1;
@@ -189,7 +189,10 @@
 }
 
 @media (max-width: 1280px) {
-  .navbar__loc {
+
+  .navbar__loc,
+  .header__timing,
+  .header__phone {
     display: none;
   }
 
@@ -200,14 +203,6 @@
   .header__container {
     justify-content: space-around;
     padding: 30px 20px;
-  }
-
-  .header__timing {
-    display: none;
-  }
-
-  .header__phone {
-    display: none;
   }
 }
 

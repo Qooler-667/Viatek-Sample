@@ -135,17 +135,21 @@ footer {
     color: #26b447;
 }
 
+/* SECTION - BUTTONS - COLORS - END ^ */
+
+/* SECTIONS - COLORS */
+/* preview - section */
 .preview__dots>span {
     background: var(--cd-color);
 }
 
-.preview__dots>span:first-child {
-    background: #1FA547;
+.preview__dots>label:hover {
+    background: #1fa547;
+    border-color: #777 !important;
 }
 
-/* SECTION - BUTTONS - COLORS - END ^ */
+/* preview - section - end ^ */
 
-/* SECTIONS - COLORS */
 /* services - section */
 .services__img_shadow {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
@@ -166,6 +170,23 @@ footer {
 
 .services>a {
     color: #26b447;
+}
+
+/* about - section */
+.about {
+    background: #26b447;
+}
+
+.about__content>h2 {
+    color: var(--base-white);
+}
+
+.about__txt-wrapper>p {
+    color: var(--base-white);
+}
+
+.about__content_btn {
+    color: var(--base-white);
 }
 
 /* SECTIONS - COLORS - END ^ */
