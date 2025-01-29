@@ -65,10 +65,12 @@
     border-radius: var(--border10);
     transition: .3s .2s;
     opacity: 0;
+    visibility: hidden;
 }
 
 .services__img_shadow:hover .services__img_btn {
     opacity: 1;
+    visibility: visible;
 }
 
 .services__img_shadow:hover .services__img_title {

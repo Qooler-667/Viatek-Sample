@@ -3,30 +3,33 @@
 }
 
 .navbar__burger_button {
-    display: flex;
+    display: block;
     width: 24px;
     height: 24px;
-    align-items: center;
-    justify-content: center;
     position: relative;
 }
 
 .navbar__burger_button>span,
 .navbar__burger_button>span::after,
 .navbar__burger_button>span::before {
+    content: '';
     width: 20px;
     height: 3px;
-    content: '';
+    position: absolute;
+}
+
+.navbar__burger_button>span {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .navbar__burger_button>span::after {
-    position: absolute;
-    top: 4px;
+    top: 6px;
 }
 
 .navbar__burger_button>span::before {
-    position: absolute;
-    bottom: 3px;
+    top: -6px;
 }
 
 .navbar__phone_button,
