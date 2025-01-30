@@ -25,6 +25,16 @@
      padding: 0 20px;
  }
 
+ .gallery__images-wrapper ::-webkit-scrollbar,
+ .services__images-wrapper ::-webkit-scrollbar {
+     height: 3px;
+ }
+
+ .gallery__images-wrapper ::-webkit-scrollbar-thumb,
+ .services__images-wrapper ::-webkit-scrollbar-thumb {
+     background: #00ff0d;
+ }
+
  button {
      cursor: pointer;
  }

@@ -146,7 +146,7 @@
 
 .navbar__pop-up {
   top: 35px;
-  right: 0;
+  right: -30px;
 }
 
 .navbar__pop-up_list,

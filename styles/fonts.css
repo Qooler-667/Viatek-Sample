@@ -19,11 +19,17 @@ body {
 
 h1,
 h2,
+h4,
 h5 {
     font-family: var(--font-family);
     font-style: normal;
     font-size: clamp(35px, calc(35px + (45 - 35) * ((100vw - 320px) / (1560 - 320))), 45px);
     font-weight: 300;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: 400;
 }
 
 h5 {
@@ -34,7 +40,6 @@ a {
     font-family: var(--font-family);
 }
 
-/* ПО КЛАССАМ */
 
 /* HEADER */
 .navbar__loc>a {
@@ -66,6 +71,7 @@ a {
     font-size: 20px;
 }
 
+/* HEADER - END ^ */
 
 /* FOOTER */
 footer {
@@ -85,12 +91,16 @@ footer {
     letter-spacing: .1em;
 }
 
-/* SECTIONS */
+/* FOOTER - END ^ */
+
+/* -SECTIONS- */
 /* preview - section */
 .preview__txt {
     font-size: 20px;
     font-weight: 300;
 }
+
+/* preview - section - end ^ */
 
 /* services - section */
 .services__img_btn {
@@ -99,17 +109,24 @@ footer {
     text-transform: uppercase;
 }
 
-.services>a {
+.main-link {
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: underline;
 }
 
+/* services - section - end ^ */
 
+/* news - section */
+.news__card>span {
+    font-size: 15px;
+    font-weight: 300;
+}
 
+/* news - section - end ^ */
 
-/* SECTION - BUTTONS */
+/* SECTIONS - BUTTONS */
 .long-green-btn,
 .clear-small-btn,
 .clear-big-btn,
