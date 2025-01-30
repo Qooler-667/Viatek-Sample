@@ -36,6 +36,10 @@
     transition: margin-left 1s ease;
 }
 
+.slide {
+    width: 100%;
+}
+
 .overflow {
     width: 100%;
     border-radius: var(--border20);
