@@ -1,0 +1,30 @@
+/* GLOBAL - STYLES */
+@import url(./global.css);
+/* GLOBAL - STYLES - END ^ */
+
+/* COLORS */
+@import url(./colors.css);
+/* COLOS - END ^ */
+/* HEADER - STYLES */
+@import url(./header/hdr.css);
+/* HEADER - STYLES - END ^*/
+
+/* FOOTER - STYLES */
+@import url(./footer/footer.css);
+/* FOOTER - STYLES - END ^ */
+
+/* STYLES - SECTIONS */
+/* home - page */
+@import url(../styles/home-page/preview.css);
+@import url(../styles/home-page/services.css);
+@import url(../styles/home-page/about.css);
+@import url(../styles/home-page/news.css);
+@import url(../styles/home-page/gallery.css);
+
+/* services - page */
+@import url(../styles/sections/services/srv.css);
+
+/* STYLES - SECTIONS - END ^ */
+/* BUTTONS - STYLES */
+@import url(../styles/button.css);
+/* BUTTONS - STYLES - END ^ */

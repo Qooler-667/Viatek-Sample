@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+/* убирает отступ у фото снизу */
+img {
+    vertical-align: bottom;
+}
+
+/* ...>>><<<... */
+input {
+    outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    outline: none;
+    -moz-appearance: textfield;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

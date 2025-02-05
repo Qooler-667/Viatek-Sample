@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "noto-sans";
+    src: url(../fonts/Noto_Sans/NotoSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "futuris";
+    src: url(../fonts/Futuris/futuris.ttf);
+}
+
+@font-face {
+    font-family: "myriad-pro";
+    src: url(../fonts/Myriad_pro/MYRIADPRO-REGULAR.ttf);
+}
+
+body {
+    font-family: "noto-sans";
+}
+
+h1,
+h2,
+h4,
+h5 {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 300;
+}
+
+h1,
+h2 {
+    font-size: clamp(35px, calc(35px + (45 - 35) * ((100vw - 320px) / (1560 - 320))), 45px);
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+a {
+    font-family: var(--font-family);
+}
+
+article {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+
+/* HEADER */
+.navbar__loc>a {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.navbar__menu_list>li>a {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header__slogan_txt {
+    font-size: clamp(12px, calc(12px + (15 - 12) * ((100vw - 320px) / (1560 - 320))), 15px);
+    font-weight: 400;
+}
+
+.header__timing_txt {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.header__timing_txt>span {
+    font-weight: 400;
+}
+
+.header__phone_form>input {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* HEADER - END ^ */
+
+/* SECTION - SERVICES */
+.page-nav span:first-child {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.page-nav span:last-child {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* FOOTER */
+footer {
+    font-family: "myriad-pro";
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.footer__phone>span {
+    font-size: 25px;
+}
+
+.footer__adress>span,
+.footer__email>span {
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+
+/* FOOTER - END ^ */
+
+/* -SECTIONS- */
+/* preview - section */
+.preview__txt {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* preview - section - end ^ */
+
+/* services - section */
+.services__img_btn {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.main-link {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/* services - section - end ^ */
+
+/* news - section */
+.news__card>span {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* news - section - end ^ */
+
+/* SECTIONS - BUTTONS */
+.long-green-btn,
+.clear-small-btn,
+.clear-big-btn,
+.call-btn-dark,
+.call-btn-light {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.clear-big-btn {
+    line-height: 100%;
+}
+
+.clear-small-btn {
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* PAGES */

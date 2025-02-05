@@ -1,0 +1,43 @@
+ :root {
+     /* fonts */
+     --font-family: "noto-sans";
+     --second-family: "myriad-pro";
+     --third-family: "futuris";
+
+     /* colors */
+     --base-black: #262d2a;
+     --base-white: #ffffff;
+     --p-up-menu-txt: #a9aeb9;
+     --cd-color: #cdcdcd;
+     --fa-color: #fafafa;
+     --navb-bg: linear-gradient(90deg, #3adc49 0%, #006943 100%);
+     --foot-bg: linear-gradient(90deg, #006943 30%, #26b447 100%);
+     --about-bg: #26b447;
+
+
+     /* BORDERS */
+     --border10: 10px;
+     --border20: 20px;
+ }
+
+ .container {
+     max-width: 1560px;
+     height: auto;
+     margin: 0 auto;
+     padding: 50px 20px;
+ }
+
+ .gallery__images-wrapper ::-webkit-scrollbar,
+ .services__images-wrapper ::-webkit-scrollbar {
+     height: 3px;
+ }
+
+ .gallery__images-wrapper ::-webkit-scrollbar-thumb,
+ .services__images-wrapper ::-webkit-scrollbar-thumb {
+     background: #26b447;
+ }
+
+ button,
+ a {
+     cursor: pointer;
+ }
