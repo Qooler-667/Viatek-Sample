@@ -88,17 +88,6 @@ article {
 
 /* HEADER - END ^ */
 
-/* SECTION - SERVICES */
-.page-nav span:first-child {
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.page-nav span:last-child {
-    font-size: 12px;
-    font-weight: 400;
-}
-
 /* FOOTER */
 footer {
     font-family: "myriad-pro";
@@ -171,5 +160,3 @@ footer {
     font-size: 12px;
     text-transform: uppercase;
 }
-
-/* PAGES */
