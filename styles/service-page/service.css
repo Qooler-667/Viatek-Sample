@@ -32,66 +32,71 @@
 
 /* ..>>><<<.. */
 
-
-.service__list {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+.service__wrapper,
+.service__wrapper2 {
+    width: 100%;
+    max-width: 1920px;
     margin: 0 auto;
+    display: flex;
+    gap: 50px;
     margin-bottom: 50px;
 }
 
-.service__item-wrapper {
-    display: flex;
-    gap: 50px;
+.half {
+    width: 50%;
 }
 
-.service__image-wrapper,
-.service__item_content {
-    width: 100%;
-    max-width: 50%;
-}
-
-.service__item_image,
-.service__item_image>img {
+.service__item_image1,
+.service__item_image2,
+.service__item_image3,
+.service__item_image4,
+.service__item_image5 {
     width: 100%;
     height: 100%;
+    min-height: 525px;
     border-radius: 0 20px 20px 0;
 }
 
-.service__item_image {
-    max-width: 975px;
-    max-height: 525px;
-    float: right;
+.service__item_image2,
+.service__item_image4 {
+    border-radius: 20px 0 0 20px;
 }
 
-.service__item_image>img {
-    object-fit: cover;
-    object-position: 0 calc(-200px - (200 - 100) * ((100vw - 1920px) / (1920 - 1560)));
+.service__item_image1>img,
+.service__item_image2>img,
+.service__item_image3>img,
+.service__item_image4>img,
+.service__item_image5>img {
+    width: 100%;
+    height: 100%;
 }
 
-
-.service__content-wrapper,
-.service__content-wrapper>p {
+.service__item_content,
+.service__item_content2 {
+    width: 100%;
+    max-width: 735px;
+    height: fit-content;
+    padding: 50px 0;
+    padding-right: 20px;
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-.service__content-wrapper {
-    padding: 50px 0;
-    padding-right: 20px;
+.service__item_content2 {
+    float: right;
+    padding-right: 0;
+    padding-left: 20px;
+    white-space: nowrap;
 }
 
-.service__content-wrapper>p,
-.service__content-wrapper2>p {
+.service__item_content>p {
+    display: flex;
+    flex-direction: column;
     gap: 30px;
-    font-size: 20px;
-    line-height: 150%;
-    font-weight: 400;
 }
 
-.service__content-wrapper>p>span {
+.service__item_content>p>span {
     font-weight: 600;
 }
 
@@ -101,71 +106,49 @@
 }
 
 
-.service__item-wrapper2 {
-    display: flex;
-    gap: 50px;
-}
+/* ..>>> MEDIA <<<.. */
 
-.service__item_content2,
-.service__image-wrapper2 {
-    width: 100%;
-    max-width: 50%;
-}
+@media (max-width:1560px) {
 
-.service__item_content2 {
-    padding: 50px 0;
-}
-
-.service__content-wrapper2 {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    float: right;
-    padding-left: 20px;
-    height: 515px;
-
-}
-
-.service__content-wrapper2>p {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    overflow: hidden;
-    overflow-y: scroll;
-}
-
-.service__item_image2 {
-    width: 100%;
-    max-width: 975px;
-    height: 100%;
-    max-height: 615px;
-}
-
-.service__item_image2>img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px 0 0 20px;
-    object-fit: cover;
-    object-position: 0 calc(-650px - (650 - 500) * ((100vw - 1920px) / (1920 - 1560)));
-}
-
-
-/* ..>>>MEDIA<<<.. */
-@media (min-width:1920px) {
-
-    .service__item_image>img {
-        object-position: 0 -200px;
-    }
-
-    .service__item_image2>img {
-        object-position: 0 -650px;
-    }
-}
-
-@media (max-width:1520px) {
-    .service__content2_br {
+    .service__item_image1>img,
+    .service__item_image2>img,
+    .service__item_image3>img,
+    .service__item_image4>img,
+    .service__item_image5>img {
         display: none;
+    }
 
+    .service__item_image1,
+    .service__item_image2,
+    .service__item_image3,
+    .service__item_image4,
+    .service__item_image5 {
+        background-size: cover;
+    }
+
+    .service__item_image1 {
+        background-image: url(/images/home.img/landscaping1.png);
+        background-position: 0 -100px;
+    }
+
+    .service__item_image2 {
+        background-image: url(/images/home.img/service-greening2.png);
+        background-position: 0 -300px;
+    }
+
+    .service__item_image3 {
+        background-image: url(/images/home.img/construct-reservoirs3.png);
+        background-position: 0 70%;
+    }
+
+    .service__item_image4 {
+        background-image: url(/images/home.img/auto-watering4.png);
+        background-position: 0 90%;
+    }
+
+    .service__item_image5 {
+        background-image: url(/images/home.img/lawn-installation5.png);
+        background-position: center;
     }
 
     .service__content_br {
@@ -174,179 +157,113 @@
 }
 
 @media (max-width:1440px) {
-    .service__item_image {
-        max-height: 615px;
-    }
-}
-
-@media (max-width:1280px) {
-    .service__item_image>img {
-        width: 100%;
-        height: 100%;
-
-        object-fit: cover;
-        object-position: 0 0;
+    .service__item_content2 {
+        white-space: normal;
     }
 
-    .service__item_image2>img {
-        object-position: 0 -200px;
+    .service__content_br2 {
+        display: none;
     }
 }
 
 @media (max-width:1024px) {
+
     .page-title {
-        padding: 30px 20px;
+        gap: 20px;
+        padding: 20px 20px;
+    }
+
+    /* ..>>><<<.. */
+
+    .service__wrapper,
+    .service__wrapper2 {
         gap: 30px;
     }
 
-
-    .service__list {
-        gap: 30px;
+    .service__item_image1,
+    .service__item_image2 {
+        background-position: 0 0;
     }
 
-    .service__item-wrapper {
-        gap: 30px;
+    .service__item_image3 {
+        background-position: 0 70%;
     }
 
-    .service__item_image2>img {
-        width: 100%;
-        height: 100%;
-        object-position: 0 0px;
+    .service__item_image4 {
+        background-position: 0 0;
     }
 
-    .service__item_content2 {
-        padding: 0;
-        padding-left: 20px;
-    }
-
-    .service__item_content {
-        padding: 0;
-        padding-right: 20px;
-    }
-
-    .service__content-wrapper,
-    .service__content-wrapper2 {
-        height: 100%;
-        padding: 0;
-        justify-content: space-around;
-
-    }
-
-    .service__content-wrapper>p,
-    .service__content-wrapper2>p {
-        font-size: 16px;
-    }
-
-    .service__content-wrapper2,
     .service__content_buttons {
         flex-direction: column;
     }
 
-    .service__content-wrapper2>p {
-        height: 300px;
-        overflow: hidden;
-        overflow-y: scroll;
+    .service__content_btn:first-child {
+        width: calc(100% - 200px);
     }
 
     .service__content_btn {
-        height: 40px;
-        font-size: 18px;
+        width: calc(100% - 80px);
+        height: 45px;
         margin: 0 auto;
-        padding: 0;
-    }
-
-    .service__content_btn:last-child {
-        height: 55px;
-    }
-
-    .service__content_btn:first-child {
-        width: 60%;
     }
 }
 
 @media (max-width:768px) {
 
-    .service__content-wrapper,
-    .service__content-wrapper2 {
-        gap: 30px;
-    }
-
-    .service__item-wrapper {
+    .service__wrapper {
         flex-direction: column;
-        gap: 30px;
     }
 
-    .service__image-wrapper {
-        max-width: 768px;
-        height: 525px;
+    .service__wrapper2 {
+        flex-direction: column-reverse;
     }
 
-    .service__item_image {
-        float: none;
-        margin: 0 auto;
+    .service__wrapper,
+    .service__wrapper2 {
+        margin-bottom: 30px;
+    }
+
+    .half {
         width: calc(100% - 40px);
-        border-radius: var(--border20);
-    }
-
-    .service__item_image>img {
-        border-radius: var(--border20);
-    }
-
-    .service__item_content {
-        width: calc(100% - 40px);
-        max-width: 768px;
         margin: 0 auto;
+    }
+
+    .service__item_content,
+    .service__item_content2 {
         padding: 0;
-    }
-
-    .service__content-wrapper {
         gap: 30px;
         text-align: center;
     }
 
-
-    .service__item-wrapper2 {
-        flex-direction: column-reverse;
-        gap: 30px;
+    .service__item_image1,
+    .service__item_image2,
+    .service__item_image3,
+    .service__item_image4,
+    .service__item_image5 {
+        border-radius: var(--border20);
     }
 
-    .service__image-wrapper2 {
-        max-width: 768px;
-        height: 525px;
+    .service__item_image1 {
+        background-position: 0 0;
     }
 
     .service__item_image2 {
-        float: none;
-        margin: 0 auto;
-        width: calc(100% - 40px);
-        border-radius: var(--border20);
+        background-position: center;
     }
 
-    .service__item_image2>img {
-        object-position: center;
-        border-radius: var(--border20);
+    .service__item_image4 {
+        background-position: center;
     }
 
-    .service__item_content2 {
-        max-width: 100%;
-        text-align: center;
-        padding: 0;
+    .service__content_buttons {
+        gap: 15px;
     }
 
-    .service__content-wrapper2 {
-        width: calc(100% - 40px);
-        float: none;
-        margin: 0 auto;
+    .service__content_btn {
+        min-width: 280px;
     }
 
-    .service__content-wrapper2>p {
-        height: fit-content;
-        gap: 20px;
-    }
-}
-
-@media (max-width:425px) {
     .service__content_btn:first-child {
-        width: 100%;
+        min-width: 200px;
     }
 }

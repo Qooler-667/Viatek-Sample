@@ -287,7 +287,6 @@
     font-size: 20px;
     font-weight: 400;
     color: var(--base-black);
-    height: 67px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -295,13 +294,11 @@
 }
 
 .service__content_btn:first-child {
-    width: 171px;
     border: 1px solid green;
     padding: 15px 30px;
 }
 
 .service__content_btn:last-child {
-    width: 213px;
     padding: 20px 30px;
     color: var(--base-white);
     background: linear-gradient(90deg, #26b447 0%, #006943 100%);
