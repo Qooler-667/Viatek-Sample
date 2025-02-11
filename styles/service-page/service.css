@@ -127,27 +127,27 @@
     }
 
     .service__item_image1 {
-        background-image: url(/images/home.img/landscaping1.png);
+        background-image: url(../../images/home.img/landscaping1.png);
         background-position: 0 -100px;
     }
 
     .service__item_image2 {
-        background-image: url(/images/home.img/service-greening2.png);
+        background-image: url(../../images/home.img/service-greening2.png);
         background-position: 0 -300px;
     }
 
     .service__item_image3 {
-        background-image: url(/images/home.img/construct-reservoirs3.png);
+        background-image: url(../../images/home.img/construct-reservoirs3.png);
         background-position: 0 70%;
     }
 
     .service__item_image4 {
-        background-image: url(/images/home.img/auto-watering4.png);
+        background-image: url(../../images/home.img/auto-watering4.png);
         background-position: 0 90%;
     }
 
     .service__item_image5 {
-        background-image: url(/images/home.img/lawn-installation5.png);
+        background-image: url(../../images/home.img/lawn-installation5.png);
         background-position: center;
     }
 
