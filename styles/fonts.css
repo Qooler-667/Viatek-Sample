@@ -45,11 +45,6 @@ h5 {
     font-size: 20px;
 }
 
-p {
-    font-size: 20px;
-    font-weight: 400;
-}
-
 a {
     font-family: var(--font-family);
 }
@@ -92,6 +87,17 @@ article {
 }
 
 /* HEADER - END ^ */
+
+/* SECTION - SERVICES */
+.page-nav span:first-child {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.page-nav span:last-child {
+    font-size: 12px;
+    font-weight: 400;
+}
 
 /* FOOTER */
 footer {
@@ -164,4 +170,19 @@ footer {
     font-weight: 600;
     font-size: 12px;
     text-transform: uppercase;
+}
+
+/* PAGES */
+.page-title__pointer {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.page-title__pointer>span:last-child {
+    color: var(--p-up-menu-txt);
+}
+
+.news-box__item_data {
+    font-size: 15px;
+    font-weight: 300;
 }
