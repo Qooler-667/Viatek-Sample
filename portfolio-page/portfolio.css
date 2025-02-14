@@ -182,18 +182,42 @@
         min-height: 300px;
     }
 
-    .position1 {
-        object-position: -350px 0;
+    .position1,
+    .position2,
+    .position3,
+    .position4,
+    .position1a,
+    .position2a,
+    .position3a,
+    .position4a {
+        object-fit: cover;
     }
 
     .position2 {
-        object-position: -300px 0;
+        object-position: 100% 0;
     }
 
     .position3 {
-        object-position: -175px 0;
+        object-position: 90% 0;
+    }
+
+    .position4 {
+        object-position: 100% 0;
+    }
+
+    .position1a {
+        object-position: 30% 0;
+    }
+
+    .position2a {
+        object-position: 80% 0;
+    }
+
+    .position4a {
+        object-position: 55% 0;
     }
 }
+
 
 @media (max-width:768px) {
 
@@ -204,15 +228,4 @@
         height: 100%;
     }
 
-    .position1 {
-        object-position: -450px 0;
-    }
-
-    .position2 {
-        object-position: -400px 0;
-    }
-
-    .position3 {
-        object-position: -250px 0;
-    }
 }
