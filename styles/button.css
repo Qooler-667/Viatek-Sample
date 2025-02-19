@@ -313,7 +313,7 @@
 /* MEDIA - BUTTONS */
 @media (max-width:1440px) {
 
-    .preview__content_btn,
+
     .preview__dots {
         margin: 0 auto;
     }
@@ -351,9 +351,7 @@
 }
 
 @media (max-width:425px) {
-    .preview__content_btn {
-        width: 100%;
-    }
+
 
     .preview__dots {
         margin-top: 20px;

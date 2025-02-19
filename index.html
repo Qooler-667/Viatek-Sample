@@ -7,7 +7,9 @@
     <title>Viatek-Sample</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./js/add.js">
     <link rel="stylesheet" href="./styles/style.css">
+
 </head>
 
 <body>
@@ -172,8 +174,82 @@
                     территорией.
                 </p>
 
-                <a href="#" class="preview__content_btn call-btn-dark">Вызвать дизайнера</a>
 
+                <!-- pop-up-form-btn -->
+
+                <a class="modal-btn" href="#modal">Вызвать дизайнера</a>
+                <div id="modal" class="modal-wrapper">
+                    <div class="modal__box">
+                        <div class="exit-btn-wrapper">
+                            <a class="exit-btn" href=""><span></span></a>
+                        </div>
+                        <h1 class="modal__title">Заказать услугу</h1>
+                        <form action="#" class="form">
+                            <div class="input-wrapper">
+                                <input class="form-input" type="text" placeholder="Не определено" required>
+                                <div class="services-menu">
+                                    <label for="check-label" class="shevron-btn">
+                                        <img src="./icons/shevron-bottom-green.svg" alt="">
+                                    </label>
+                                    <input id="check-label" type="checkbox" name="list">
+                                    <div class="services__list-wrapper">
+                                        <ul class="services__list">
+                                            <li>Не определено
+                                                <label for="check-label" class="shevron-btn">
+                                                    <img src="./icons/shevron-top-green.svg" alt="">
+                                                </label>
+
+                                            </li>
+                                            <li>Вызов дизайнера</li>
+                                            <li>Ландшафтные работы</li>
+                                            <li>Озеленение участка</li>
+                                            <li>Устройство водоемов</li>
+                                            <li>Автоматический полив</li>
+                                            <li>Устройство газонов</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="form__text">
+                                <span>Спасибо, что обратились к нам!
+                                </span>Как только мы получим от вас сообщение, наши<br> менеджеры постараются в
+                                кратчайшие сроки
+                                дать
+                                вам<br> исчерпывающую информацию по всем вашим вопросам.
+                            </p>
+                            <div class="input-wrapper">
+                                <input class="form-input" id="#" name="#" type="name" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="input-wrapper">
+                                <input class="form-input" type="tel" placeholder="+7 (___) ___ - __ - __" required>
+                            </div>
+                            <textarea name="#" id="#" cols="30" rows="10"
+                                placeholder="Дополнительная информация"></textarea>
+                            <div class="form__agree">
+                                <label class="form-switch">
+                                    <input type="checkbox" id="form-switch">
+                                    <span class="form-slider"></span>
+                                </label>
+                                <label for="form-switch">
+                                    <p class="agree__text">
+                                        Я даю согласие на обработку персональных данных<span>
+                                            в<br>
+                                            соответствии с законодательством
+                                            Российской
+                                            Федерации.</span>
+                                    </p>
+                                </label>
+                            </div>
+                            <button class="submit-btn" type="submit">Вызвать дизайнера</button>
+                        </form>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- 4-dots -->
                 <div class="preview__dots">
                     <label for="switch1" checked></label>
                     <label for="switch2"></label>
@@ -456,6 +532,11 @@
     </main> <!-- MAIN - END ^ -->
 
 
+
+
+
+
+
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container footer__container">
@@ -492,6 +573,9 @@
             </div>
         </div><!-- container footer__container -->
     </footer>
+
+
+
 </body>
 
 </html>

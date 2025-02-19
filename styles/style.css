@@ -25,6 +25,10 @@
 @import url(../styles/sections/services/srv.css);
 
 /* STYLES - SECTIONS - END ^ */
+
 /* BUTTONS - STYLES */
 @import url(../styles/button.css);
 /* BUTTONS - STYLES - END ^ */
+
+
+@import url(../js/index.js)
