@@ -73,7 +73,7 @@
 
 .exit-button__span,
 .exit-button__span::after {
-    background-color: #F79418;
+    background-color: var(--exit-btn);
 }
 
 /* HEADER SEARCH - BUTTON */
@@ -189,9 +189,12 @@
     bottom: 30px;
     left: 30px;
     border-radius: var(--border10);
-    transition: .3s .2s;
     opacity: 0;
     visibility: hidden;
+}
+
+.services__img_btn:hover {
+    background: linear-gradient(178deg, #26b447 0%, #229b32 50.39%, #3adc49 100%);
 }
 
 /* SERVICES - section - end ^ */
@@ -270,6 +273,13 @@
     padding: 10px 15px;
     color: var(--about-bg);
     border: 1px solid #d9d9d9;
+
+}
+
+.clear-small-btn:hover {
+    background: linear-gradient(90deg, #3adc49 0%, #26b447 45.82%, #006943 100%);
+    color: var(--base-white);
+    border: 1px solid var(--base-white);
 }
 
 /* ДЛИННАЯ КНОПКА */

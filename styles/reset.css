@@ -14,9 +14,7 @@ img {
 }
 
 /* ...>>><<<... */
-input {
-    outline: none;
-}
+
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {

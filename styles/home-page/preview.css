@@ -24,6 +24,14 @@
      font-weight: 400;
      color: var(--base-white);
      padding: 20px 30px;
+     box-shadow: 0 0 5px 1px #00000046;
+     border: .3px solid rgba(255, 255, 255, 0.685);
+ }
+
+ .modal-btn:hover {
+     background: linear-gradient(90deg, #3adc49 0%, #26b447 45.82%, #006943 100%);
+     border: .1px white;
+     box-shadow: 0 0 5px 1px #00000071;
  }
 
  .exit-btn-wrapper {
@@ -250,8 +258,6 @@
  }
 
  input:checked+.form-slider:before {
-     -webkit-transform: translateX(26px);
-     -ms-transform: translateX(26px);
      transform: translateX(26px);
  }
 

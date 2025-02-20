@@ -20,8 +20,15 @@
     flex-direction: column;
     gap: 30px;
     border: 1px solid #eee;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.055);
+    transition: .3s;
 }
 
+.news__card:hover {
+
+    background: rgba(238, 238, 238, .5);
+    box-shadow: -1px 1px 5px silver;
+}
 
 /* MEDIA */
 @media (max-width:1024px) {

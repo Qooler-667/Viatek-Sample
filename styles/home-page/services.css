@@ -45,7 +45,7 @@
     position: absolute;
     bottom: 30px;
     left: 30px;
-    transition: .5s;
+
 }
 
 .services__img_shadow:hover .services__img_btn {

@@ -29,6 +29,15 @@
     position: relative;
 }
 
+.gallery-img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .5s;
+}
+
 .gallery__img-shadow {
     position: absolute;
     width: 100%;
@@ -55,8 +64,14 @@
 .gallery__img-wrapper:hover .gallery__search_btn {
     visibility: visible;
     opacity: 1;
+    z-index: 1;
 }
 
+.gallery__img-wrapper:hover .gallery-img {
+    transform: scale(1.2);
+}
+
+/* MEDIA */
 @media (max-width: 1559.9px) {
     .gallery__images-wrapper {
         height: 335px;
